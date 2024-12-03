@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register_ExposeIT</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            margin: 0px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: 'Arial Nova','Numans', sans-serif;
+        }
+
+        .container {
+            background-color: black;
+            /* border: black 1px solid; */
+            /* min-width: 500px; */
+            box-shadow: 3px 3px 10px rgb(150,150,150);
+            min-height: 335px;
+            border-radius: 25px 5px;
+            display: flex;
+        }
+
+        .left {
+            min-width: 60%;
+            margin: 0px;
+        }
+
+        .right {
+            min-width: 40% !important;
+            background-color: rgb(239 146 28);
+            border-radius: 25px 0px 0px 5px;
+            margin: 0px;
+        }
+
+        .login {
+            color: white !important;
+            margin: 10%;
+            /* border: orangered 1px solid; */
+            padding: 2px !important;
+        }
+
+        .loginname {
+            /* border: orangered 1px solid; */
+            padding: 0px 5px;
+            margin: 0px;
+            text-align: right !important;
+            font-size: 80px;
+            font-family:"Big Shoulders Display",'Times New Roman', Times, serif;
+        }
+
+        .logininfo {
+            margin: 5px;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .userinput {
+            padding: 5px;
+            /* border: orangered 1px solid; */
+        }
+
+        .inputtags {
+            /* margin:2px; */
+            padding: 0px;
+            background-color: white;
+            color: black;
+            width: fit-content;
+            /* min-width: 20px; */
+            /* padding: 2px; */
+            /* justify-content: center; */
+            display: flex;
+            font-size: 20px;
+            border-radius: 6px 3px 6px 3px;
+            width: 100%;
+        }
+
+        .names {
+            min-width: 100px !important;
+            padding: 2px !important;
+            text-align: center;
+            /* justify-content: center; */
+            /* display:block !important; */
+            background-color: rgb(239 146 28);
+            /* font-weight:bold !important; */
+            color: black;
+            border-radius: 6px 0px 0px 3px;
+        }
+
+        .inputtake {
+            /* max-width: 100%;
+            max-height: 100%; */
+            color: black;
+            /* background-color: rgb(239 146 28); */
+            border: 0px !important;
+            border-radius: 0px 3px 6px 0px;
+            padding-left: 10px;
+            width: 100%;
+            font-size: 13.5px !important;
+        }
+
+        .inputtake:focus {
+            box-shadow: 0 0 0 0 !important;
+            border: 0px !important;
+            /* font-size: 20px; */
+        }
+
+        .fp, .tc{
+            font-size: 16px !important;
+            color: white;
+            /* margin-left: 5% ; */
+            text-decoration: none !important;
+        }
+        .tc{
+            margin-left: 5%;
+            /* text-align: left !important; */
+        }
+
+        .fp:hover {
+            text-decoration: underline;
+            color: rgb(239 146 28) !important;
+        }
+
+        .fp::after {
+            color: white;
+        }
+
+        .button {
+            /* align-items: center; */
+            text-align: center;
+            /* padding: auto !important; */
+        }
+
+        .loginbtn {
+            color: black;
+            font-size: 23px !important;
+            background-color: rgb(239 146 28);
+            border-radius: 8px 3px;
+            padding: 3px 8px;
+            margin-top: 15px;
+            min-height: 35px;
+            border: 0px;
+        }
+
+        .loginbtn:hover {
+            color: rgb(255, 255, 255);
+            font-size: 21px !important;
+            background-color: rgb(0, 0, 0);
+            border-radius: 8px 3px;
+            padding: 3px 8px;
+            border:rgb(239 146 28) 1px solid;
+            /* transform: linear 3s; */
+        }
+        .app{
+            justify-content: center;
+            /* display: flex; */
+            /* border: orangered 1px solid; */
+            /* align-items: center; */
+            /* min-height:50px; */
+            margin-top: 30% !important;
+            margin:15%;
+        }
+
+        img{
+            max-width: 100%;
+            margin-top: 30%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+        .appname{
+            font-size: 40px;
+            /* font-style: bold !important; */
+            font-weight: bolder;
+            text-align: center;
+        }
+        .reglink{
+            text-align: center;
+            font-size: 23px;
+            margin-top: 30px;
+            padding: 0px;
+            /* border: orangered 1px solid; */
+            color: black !important;
+        }
+        .rgs{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .rgs:hover{
+            text-decoration: underline;
+        }
+        .getgen{
+            text-align: center;
+            font-size: 18px;
+            margin: auto;
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* display: block; */
+            /* border: orangered 1px solid; */
+            min-width:fit-content;
+        }
+        .gen{
+            padding: 5px;
+        }
+    </style>
+    <link rel="icon" href="static/applogo2.0.png" type="image/icon type">
+
+    <script src="https://kit.fontawesome.com/c4cb78a369.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="right">
+            <div class="app">
+                <div class="applogo">
+                    <div class="appimg"><img src="static/applogo1.jpg"></img></div>
+                    <div class="appname">Expose IT</div>
+                </div>
+                <div class="reglink">
+                    Already Register?
+                    <a href="/login" class="rgs">Login Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="login">
+                <h1 class="loginname">Register</h1>
+                <form method="POST">
+                    <div class="logininfo">
+                        <div class="userinput">
+                            <div class="flash">
+                                {% with messages = get_flashed_messages(with_categories=true) %}
+                                {% if messages %}
+                                {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                    <span style="background: none">{{ message }}</span>
+
+                                </div>
+
+
+                                {% endfor %}
+                                {% endif %}
+                                {% endwith %}
+
+                            </div>
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-envelope"></i> -->
+                                    Name
+                                </span>
+                                <input class="inputtake" type="text" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Email -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-envelope"></i> -->
+                                    Email
+                                </span>
+                                <input class="inputtake" type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Password -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-key"></i> -->
+                                    Password
+                                </span>
+                                <input class="inputtake" type="password" name="password" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Confirm Password -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-key"></i> -->
+                                    Confirm it
+                                </span>
+                                <input class="inputtake" type="text" name="cpassword" placeholder="Re-Enter Password" required>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Mobile -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-key"></i> -->
+                                    Mobile
+                                </span>
+                                <input class="inputtake" type="text" name="mobile" placeholder="Mobile" pattern="[0-9]{10}" required>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Gender -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-key"></i> -->
+                                    Gender
+                                </span>
+                                <div class="getgen">
+                                    <input type="radio" name="gender" value="Male" required>
+                                    <label for="gender" class="gen">Male</label>
+                                    <input type="radio" name="gender" value="Female">
+                                    <label for="gender" class="gen">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <!-- Gender -->
+                            <div class="inputtags">
+                                <span class="names">
+                                    <!-- <i class="fa fa-key"></i> -->
+                                    Age
+                                </span>
+                                <input class="inputtake" type="number" name="age" placeholder="Age" required>
+                            </div>
+                        </div>
+                        <div class="tc">
+                        <input type="checkbox" required>Accept
+                        <a class="fp" href="/tandc">Term and Conditions</a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="loginbtn" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

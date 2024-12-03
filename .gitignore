@@ -1,0 +1,50 @@
+# Ignore Python cache files
+_pycache_/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+myenv/
+venv/
+.env/
+*.env
+*.venv
+.virtual_documents/
+
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.~
+
+# Ignore hidden files
+.*.swp
+*.swo
+
+# Ignore temporary notebook files
+*.nbconvert.ipynb
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore compiled C extensions
+*.so
+
+
+# Ignore system generated files
+*.lock
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
